@@ -1,0 +1,78 @@
+Starting training model: ONE_FC
+[1, 2000] loss: 2.3609804348498584
+[1, 4000] loss: 2.3415838598012924
+[1, 6000] loss: 2.357682110927999
+[1, 8000] loss: 2.321550282485783
+[1, 10000] loss: 2.321482840247452
+[1, 12000] loss: 2.305692175745964
+[2, 2000] loss: 2.2430802261605858
+[2, 4000] loss: 2.2610250245630743
+[2, 6000] loss: 2.2816369781941175
+[2, 8000] loss: 2.2779581747874618
+[2, 10000] loss: 2.2952007918283344
+[2, 12000] loss: 2.3458665059283375
+Finished training model: ONE_FC
+====================================================
+Starting testing model: ONE_FC
+Accuracy of the network on the test images: 33.06
+====================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Starting training model: TWO_FC
+[1, 2000] loss: 2.0322582698613405
+[1, 4000] loss: 1.894276489958167
+[1, 6000] loss: 1.8576947202533483
+[1, 8000] loss: 1.8271358599662781
+[1, 10000] loss: 1.8263428324013948
+[1, 12000] loss: 1.8138671982437373
+[2, 2000] loss: 1.7458406321406363
+[2, 4000] loss: 1.7500057562515139
+[2, 6000] loss: 1.7350627184957266
+[2, 8000] loss: 1.7174163259267807
+[2, 10000] loss: 1.7379171374887228
+[2, 12000] loss: 1.7349624597355724
+Finished training model: TWO_FC
+====================================================
+Starting testing model: TWO_FC
+Accuracy of the network on the test images: 43.1
+====================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Starting training model: ONE_CNN
+[1, 2000] loss: 3.1556260196007786
+[1, 4000] loss: 1.5478799796700478
+[1, 6000] loss: 1.4548574949279427
+[1, 8000] loss: 1.37329179661721
+[1, 10000] loss: 1.3649951133877039
+[1, 12000] loss: 1.3095580006465315
+[2, 2000] loss: 1.180209342647344
+[2, 4000] loss: 1.1795415350310505
+[2, 6000] loss: 1.1752701999582351
+[2, 8000] loss: 1.186861481051892
+[2, 10000] loss: 1.1686028578281402
+[2, 12000] loss: 1.1875594689846038
+Finished training model: ONE_CNN
+====================================================
+Starting testing model: ONE_CNN
+Accuracy of the network on the test images: 58.46
+====================================================
+Files already downloaded and verified
+Files already downloaded and verified
+Starting training model: TWO_CNN
+[1, 2000] loss: 1.84103770647943
+[1, 4000] loss: 1.5182576887607575
+[1, 6000] loss: 1.3714599128887057
+[1, 8000] loss: 1.267272878974676
+[1, 10000] loss: 1.216788070153445
+[1, 12000] loss: 1.1470736633129417
+[2, 2000] loss: 1.0713074994999916
+[2, 4000] loss: 1.0316621689703316
+[2, 6000] loss: 1.0006225045975297
+[2, 8000] loss: 1.0051710716076194
+[2, 10000] loss: 0.9716005329564213
+[2, 12000] loss: 0.9937666538897901
+Finished training model: TWO_CNN
+====================================================
+Starting testing model: TWO_CNN
+Accuracy of the network on the test images: 65.07
+====================================================

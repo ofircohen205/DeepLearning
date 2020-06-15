@@ -1,3 +1,7 @@
+# Name: Ofir Cohen
+# ID: 312255847
+# Date: 15/5/2020
+
 import torch
 import torchvision
 import torchvision.transforms as transforms

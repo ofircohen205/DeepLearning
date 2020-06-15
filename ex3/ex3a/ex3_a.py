@@ -1,6 +1,6 @@
 # Name: Ofir Cohen
 # ID: 312255847
-# Date: 27/5/2020
+# Date: 15/5/2020
 
 # from trains import Task
 # task = Task.init(project_name="Deep_Learning_Frameworks_Playground", task_name="babysitting_learning_process")
@@ -76,7 +76,7 @@ def fit_predict(model, epochs=2, lr=1e-3):
     plt.legend(['train'], loc='upper left')
     plt.savefig('./plots/{}_loss_plot.png'.format(model['name']))
     plt.clf()
-    plt.plot(train_loss_values)
+    plt.plot(accuracy_values)
     plt.title("model {} accuracy".format(model['name']))
     plt.ylabel("accuracy")
     plt.xlabel("epoch")

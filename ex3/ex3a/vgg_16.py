@@ -1,3 +1,7 @@
+# Name: Ofir Cohen
+# ID: 312255847
+# Date: 15/5/2020
+
 import torch
 import torchvision
 import torchvision.transforms as transforms
@@ -19,22 +23,15 @@ class VGG(nn.Module):
             nn.Linear(512, 4096),
             nn.ReLU(True),
             nn.Dropout(),
-            nn.Linear(4096, 1024),
+            nn.Linear(4096, 4096),
             nn.ReLU(True),
             nn.Dropout(),
-            nn.Linear(1024, 10)
+            nn.Linear(4096, 10)
         )
-
-        # Initialize weights
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d):
-                n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
-                m.weight.data.normal_(0, math.sqrt(2. / n))
-                m.bias.data.zero_()
 
     def forward(self, x):
         x = self.features(x)
-        x = x.view(x.size(0), -1)
+        x = x.reshape(x.shape[0], -1)
         x = self.classifier(x)
         return x
 ''' End class '''
@@ -51,9 +48,9 @@ def make_layers(config, batch_norm=False):
     in_channels = 3
     for v in config:
         if v == 'M':
-            layers += [nn.MaxPool2d(kernel_size=2, stride=2)]
+            layers += [nn.MaxPool2d(kernel_size=(2,2), stride=(2,2))]
         else:
-            conv2d = nn.Conv2d(in_channels, v, kernel_size=3, padding=1)
+            conv2d = nn.Conv2d(in_channels, v, kernel_size=(3,3), stride=(1,1), padding=(1,1))
             if batch_norm:
                 layers += [conv2d, nn.BatchNorm2d(v), nn.ReLU(inplace=True)]
             else:
